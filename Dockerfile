@@ -43,6 +43,8 @@ USER jovyan
 RUN /opt/conda/bin/pip install https://github.com/manics/jupyter-server-proxy/archive/1f22ccf44abd7ab5f7b306d57b6adb1dc3190e8b.zip
 RUN conda install -y -q -c manics websockify=0.9.0
 
+RUN /opt/conda/bin/pip install pygame
+
 ADD jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
 
 
